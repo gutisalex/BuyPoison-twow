@@ -41,6 +41,7 @@ BUYPOISONS_COMPONENT_DUST_OF_DETERIORATION		="Staub der Verschlechterung";
 BUYPOISONS_COMPONENT_ESSENCE_OF_AGONY			="Essenz der Pein";
 BUYPOISONS_COMPONENT_ESSENCE_OF_PAIN			="Essenz des Schmerzes";
 BUYPOISONS_COMPONENT_LETHARGY_ROOT				="Lethargiewurzel";
+BUYPOISONS_COMPONENT_MAIDENS_ANGUISH			="Jungfernangst";
 
 BUYPOISONS_VIAL_EMPTY					="Leere Phiole";
 BUYPOISONS_VIAL_CRYSTAL					="Kristallphiole";
@@ -61,6 +62,7 @@ BUYPOISONS_SHORTKEY_ESSENCE_OF_PAIN			="essenceofpain";
 BUYPOISONS_SHORTKEY_FLASH_POWDER				="flashpowder";
 BUYPOISONS_SHORTKEY_LEADED_VIAL				="leadedvial";
 BUYPOISONS_SHORTKEY_LETHARGY_ROOT				="lethargyroot";
+BUYPOISONS_SHORTKEY_MAIDENS_ANGUISH			="maidensanguish";
 
 
 
@@ -85,6 +87,10 @@ BuyPoisonsItemInfo[18]["name"] = "Gedanken benebelndes Gift";
 BuyPoisonsItemInfo[19]["name"] = "Verkr\195\188ppelndes Gift";
 BuyPoisonsItemInfo[20]["name"] = "Sofort wirkendes Gift ";
 BuyPoisonsItemInfo[21]["name"] = "Blitzstrahlpulver";
+BuyPoisonsItemInfo[22]["name"] = "Aufwiegelndes Gift";
+BuyPoisonsItemInfo[23]["name"] = "Aufl\195\182sendes Gift";
+BuyPoisonsItemInfo[24]["name"] = "Aufl\195\182sendes Gift II";
+BuyPoisonsItemInfo[25]["name"] = "\195\132tzendes Gift";
 
 BuyPoisonsItemInfo[1]["shortkey"] = "dp5";
 BuyPoisonsItemInfo[2]["shortkey"] = "ip6";
@@ -107,6 +113,10 @@ BuyPoisonsItemInfo[18]["shortkey"] = "mp1";
 BuyPoisonsItemInfo[19]["shortkey"] = "cp1";
 BuyPoisonsItemInfo[20]["shortkey"] = "ip1";
 BuyPoisonsItemInfo[21]["shortkey"] = "fp1";
+BuyPoisonsItemInfo[22]["shortkey"] = "ap1";
+BuyPoisonsItemInfo[23]["shortkey"] = "dv1";
+BuyPoisonsItemInfo[24]["shortkey"] = "dv2";
+BuyPoisonsItemInfo[25]["shortkey"] = "cr1";
 
 
 end

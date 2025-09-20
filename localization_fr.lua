@@ -47,6 +47,7 @@ BUYPOISONS_COMPONENT_DUST_OF_DETERIORATION ="Poussi\195\168re de d\195\169t\195\
 BUYPOISONS_COMPONENT_ESSENCE_OF_AGONY ="Essence d\'agonie";
 BUYPOISONS_COMPONENT_ESSENCE_OF_PAIN ="Essence de douleur";
 BUYPOISONS_COMPONENT_LETHARGY_ROOT ="Poudre l\195\169thargique";
+BUYPOISONS_COMPONENT_MAIDENS_ANGUISH ="Angoisse de jeune fille";
 
 BUYPOISONS_VIAL_EMPTY ="Fiole vide";
 BUYPOISONS_VIAL_CRYSTAL ="Fiole de cristal";
@@ -65,6 +66,7 @@ BUYPOISONS_SHORTKEY_ESSENCE_OF_PAIN ="essenceofpain";
 BUYPOISONS_SHORTKEY_FLASH_POWDER ="flashpowder";
 BUYPOISONS_SHORTKEY_LEADED_VIAL ="leadedvial";
 BUYPOISONS_SHORTKEY_LETHARGY_ROOT ="lethargyroot";
+BUYPOISONS_SHORTKEY_MAIDENS_ANGUISH ="maidensanguish";
 
 
 
@@ -91,6 +93,10 @@ BuyPoisonsItemInfo[18]["name"] = "Distraction mentale ";
 BuyPoisonsItemInfo[19]["name"] = "Poison affaiblissant ";
 BuyPoisonsItemInfo[20]["name"] = "Poison instantan\195\169 ";
 BuyPoisonsItemInfo[21]["name"] = "Poudre \195\169clipsante";
+BuyPoisonsItemInfo[22]["name"] = "Poison agitant";
+BuyPoisonsItemInfo[23]["name"] = "Poison dissolvant";
+BuyPoisonsItemInfo[24]["name"] = "Poison dissolvant II";
+BuyPoisonsItemInfo[25]["name"] = "Poison corrosif";
 
 
 BuyPoisonsItemInfo[1]["shortkey"] = "dp5";
@@ -114,6 +120,10 @@ BuyPoisonsItemInfo[18]["shortkey"] = "mp1";
 BuyPoisonsItemInfo[19]["shortkey"] = "cp1";
 BuyPoisonsItemInfo[20]["shortkey"] = "ip1";
 BuyPoisonsItemInfo[21]["shortkey"] = "fp1";
+BuyPoisonsItemInfo[22]["shortkey"] = "ap1";
+BuyPoisonsItemInfo[23]["shortkey"] = "dv1";
+BuyPoisonsItemInfo[24]["shortkey"] = "dv2";
+BuyPoisonsItemInfo[25]["shortkey"] = "cr1";
 
 
 end

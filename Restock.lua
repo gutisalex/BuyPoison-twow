@@ -25,7 +25,7 @@ function BuyPoisons_RestockPoisons()
 	BuyPoisonsComponents[10]=BUYPOISONS_COMPONENT_LETHARGY_ROOT;
 
 
-	for i = 1, 21 do
+	for i = 1, 25 do
 			local VialType = BuyPoisonsItemInfo[i]["Vial_Type"];
 			local RestockQuantity = BuyPoisonsData[Server][User][i];
 			if (RestockQuantity > 0) then

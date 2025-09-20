@@ -14,6 +14,10 @@ BUYPOISONS_HELP_MESSAGE = {
 	"/bp dpX Y 	Buy Components for Y Level X Deadly Poison",
 	"/bp mpX Y 	Buy Components for Y Level X Mind-numbing Poison",
 	"/bp ipX Y 	Buy Components for Y Level X Instant Poison",
+	"/bp ap1 Y 	Buy Components for Y Agitating Poison",
+	"/bp dv1 Y 	Buy Components for Y Dissolvent Poison",
+	"/bp dv2 Y 	Buy Components for Y Dissolvent Poison II",
+	"/bp cr1 Y 	Buy Components for Y Corrosive Poison",
 	"/bp fp Y Buy Y Flash Powder",
 	"e.g. '/bp wp3 10' will buy all components needed for 10 lots of level 3 Wound Poison.",
 	"Warning: Using anything but multiples of 5 will not handle Vial Numbers properly",
@@ -40,6 +44,7 @@ BUYPOISONS_COMPONENT_DUST_OF_DETERIORATION		="Dust of Deterioration";
 BUYPOISONS_COMPONENT_ESSENCE_OF_AGONY			="Essence of Agony";
 BUYPOISONS_COMPONENT_ESSENCE_OF_PAIN			="Essence of Pain";
 BUYPOISONS_COMPONENT_LETHARGY_ROOT				="Lethargy Root";
+BUYPOISONS_COMPONENT_MAIDENS_ANGUISH			="Maiden's Anguish";
 
 BUYPOISONS_VIAL_EMPTY					="Empty Vial";
 BUYPOISONS_VIAL_CRYSTAL					="Crystal Vial";
@@ -60,6 +65,7 @@ BUYPOISONS_SHORTKEY_ESSENCE_OF_PAIN			="essenceofpain";
 BUYPOISONS_SHORTKEY_FLASH_POWDER				="flashpowder";
 BUYPOISONS_SHORTKEY_LEADED_VIAL				="leadedvial";
 BUYPOISONS_SHORTKEY_LETHARGY_ROOT				="lethargyroot";
+BUYPOISONS_SHORTKEY_MAIDENS_ANGUISH			="maidensanguish";
 
 
 
@@ -84,6 +90,10 @@ BuyPoisonsItemInfo[18]["name"] 				= "Mind-numbing Poison";
 BuyPoisonsItemInfo[19]["name"] 				= "Crippling Poison";
 BuyPoisonsItemInfo[20]["name"] 				= "Instant Poison ";
 BuyPoisonsItemInfo[21]["name"] 				= "Flash Powder";
+BuyPoisonsItemInfo[22]["name"] 				= "Agitating Poison";
+BuyPoisonsItemInfo[23]["name"] 				= "Dissolvent Poison";
+BuyPoisonsItemInfo[24]["name"] 				= "Dissolvent Poison II";
+BuyPoisonsItemInfo[25]["name"] 				= "Corrosive Poison";
 
 BuyPoisonsItemInfo[1]["shortkey"] = "dp5";
 BuyPoisonsItemInfo[2]["shortkey"] = "ip6";
@@ -106,6 +116,10 @@ BuyPoisonsItemInfo[18]["shortkey"] = "mp1";
 BuyPoisonsItemInfo[19]["shortkey"] = "cp1";
 BuyPoisonsItemInfo[20]["shortkey"] = "ip1";
 BuyPoisonsItemInfo[21]["shortkey"] = "fp1";
+BuyPoisonsItemInfo[22]["shortkey"] = "ap1";
+BuyPoisonsItemInfo[23]["shortkey"] = "dv1";
+BuyPoisonsItemInfo[24]["shortkey"] = "dv2";
+BuyPoisonsItemInfo[25]["shortkey"] = "cr1";
 
 
 end

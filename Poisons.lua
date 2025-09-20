@@ -2,7 +2,7 @@ function BUYPOISONS_LOADPOISONS()
 
 BuyPoisonsItemInfo={};
 
-for i=1, 21, 1 do
+for i=1, 25, 1 do
 	BuyPoisonsItemInfo[i]={};
 	BuyPoisonsItemInfo[i]["Components"]={};
 	BuyPoisonsItemInfo[i]["Components"][1]={};
@@ -144,6 +144,38 @@ BuyPoisonsItemInfo[18]["Components"][1]["Quantity"]=1;
 BuyPoisonsItemInfo[18]["Components"][2]["Item"]= BUYPOISONS_COMPONENT_ESSENCE_OF_PAIN;
 BuyPoisonsItemInfo[18]["Components"][2]["Quantity"]=1;
 BuyPoisonsItemInfo[18]["Vial_Type"]=BUYPOISONS_VIAL_EMPTY;
+
+--New Turtle WoW Poisons
+
+--Agitating Poison: 2 Maiden's Anguish, Leaded Vial
+BuyPoisonsItemInfo[22]["texture"] = "Interface\\Icons\\Ability_Poisons";
+BuyPoisonsItemInfo[22]["Components"][1]["Item"]= BUYPOISONS_COMPONENT_MAIDENS_ANGUISH;
+BuyPoisonsItemInfo[22]["Components"][1]["Quantity"]= 2;
+BuyPoisonsItemInfo[22]["Vial_Type"]=BUYPOISONS_VIAL_LEADED;
+
+--Dissolvent Poison: 2 Dust of Deterioration, 3 Maiden's Anguish, Crystal Vial
+BuyPoisonsItemInfo[23]["texture"] = "Interface\\Icons\\Ability_Rogue_DualWeild";
+BuyPoisonsItemInfo[23]["Components"][1]["Item"]= BUYPOISONS_COMPONENT_DUST_OF_DETERIORATION;
+BuyPoisonsItemInfo[23]["Components"][1]["Quantity"]= 2;
+BuyPoisonsItemInfo[23]["Components"][2]["Item"]= BUYPOISONS_COMPONENT_MAIDENS_ANGUISH;
+BuyPoisonsItemInfo[23]["Components"][2]["Quantity"]= 3;
+BuyPoisonsItemInfo[23]["Vial_Type"]=BUYPOISONS_VIAL_CRYSTAL;
+
+--Dissolvent Poison II: 3 Dust of Deterioration, 4 Maiden's Anguish, Crystal Vial
+BuyPoisonsItemInfo[24]["texture"] = "Interface\\Icons\\Ability_Rogue_DualWeild";
+BuyPoisonsItemInfo[24]["Components"][1]["Item"]= BUYPOISONS_COMPONENT_DUST_OF_DETERIORATION;
+BuyPoisonsItemInfo[24]["Components"][1]["Quantity"]= 3;
+BuyPoisonsItemInfo[24]["Components"][2]["Item"]= BUYPOISONS_COMPONENT_MAIDENS_ANGUISH;
+BuyPoisonsItemInfo[24]["Components"][2]["Quantity"]= 4;
+BuyPoisonsItemInfo[24]["Vial_Type"]=BUYPOISONS_VIAL_CRYSTAL;
+
+--Corrosive Poison: 3 Dust of Deterioration, 3 Deathweed, Crystal Vial
+BuyPoisonsItemInfo[25]["texture"] = "Interface\\Icons\\Spell_Nature_NullifyDisease";
+BuyPoisonsItemInfo[25]["Components"][1]["Item"]= BUYPOISONS_COMPONENT_DUST_OF_DETERIORATION;
+BuyPoisonsItemInfo[25]["Components"][1]["Quantity"]= 3;
+BuyPoisonsItemInfo[25]["Components"][2]["Item"]= BUYPOISONS_COMPONENT_DEATHWEED;
+BuyPoisonsItemInfo[25]["Components"][2]["Quantity"]= 3;
+BuyPoisonsItemInfo[25]["Vial_Type"]=BUYPOISONS_VIAL_CRYSTAL;
 
 
 end

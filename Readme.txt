@@ -9,19 +9,35 @@ This will also allow you to automaticly restock a chosen amount of Flashpowder i
 /bp dpX Y 	Buy Components for Y Level X Deadly Poison
 /bp mpX Y 	Buy Components for Y Level X Mind-numbing Poison
 /bp ipX Y 	Buy Components for Y Level X Instant Poison
+/bp ap1 Y 	Buy Components for Y Agitating Poison (Turtle WoW)
+/bp dv1 Y 	Buy Components for Y Dissolvent Poison (Turtle WoW)
+/bp dv2 Y 	Buy Components for Y Dissolvent Poison II (Turtle WoW)
+/bp cr1 Y 	Buy Components for Y Corrosive Poison (Turtle WoW)
 /bp fp Y Buy Y Flash Powder
-e.g. "/bp wp3 10" will buy all components needed for 10 lots of 
+e.g. "/bp wp3 10" will buy all components needed for 10 lots of
 	level 3 Wound Poison.
-Warning: Using anything but multiples of 5 will not handle Vial 
+e.g. "/bp ap1 5" will buy all components needed for 5 lots of
+	Agitating Poison (2 Maiden's Anguish + Leaded Vial each).
+Warning: Using anything but multiples of 5 will not handle Vial
 Numbers properly as they can only be bought in multiples of 5 from stores.
 
-Automaticly Purchase Flashpowder every time you are at a vendor: 
+Automaticly Purchase Flashpowder every time you are at a vendor:
 /bp rfp 0    -Turns off FlashPowder Auto Restock
 /bp rfp Y    -Turns on FlashPowder Auto Restock for Y FlashPowder
 ==================================================================
 
 
 Changes :
+4.5 - Turtle WoW Support
+- Added support for Turtle WoW's new poisons:
+  * Agitating Poison (/bp ap1 Y) - 2 Maiden's Anguish + Leaded Vial
+  * Dissolvent Poison (/bp dv1 Y) - 2 Dust of Deterioration + 3 Maiden's Anguish + Crystal Vial
+  * Dissolvent Poison II (/bp dv2 Y) - 3 Dust of Deterioration + 4 Maiden's Anguish + Crystal Vial
+  * Corrosive Poison (/bp cr1 Y) - 3 Dust of Deterioration + 3 Deathweed + Crystal Vial
+- Added new component "Maiden's Anguish" with full localization support
+- Updated UI to display new poisons
+- Expanded poison data structure from 21 to 25 slots
+
 4.4
 - Fixed Crippling poison 2 buying the stuff for Crippling Poison 1 as well
 - Added /bp force    option to force the opening of the gui
