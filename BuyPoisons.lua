@@ -247,16 +247,26 @@ end
 
 function BuyPoisons_GetPrice(i, BuyPoisons_PurchaseQuantity)
 	-- bp_print(" "..i.." "..BuyPoisonsItemInfo[i]["Components"][1]["Item"])
-	name, texture, price, quantity, numAvailable, isUsable = GetMerchantItemInfo(Index_merchant(BuyPoisonsItemInfo[i]["Components"][1]["Item"]));
-	BuyPoisons_Item_price = price * (BuyPoisonsItemInfo[i]["Components"][1]["Quantity"]) * BuyPoisons_PurchaseQuantity;
+	BuyPoisons_Item_price = 0;
+	local component1_index = Index_merchant(BuyPoisonsItemInfo[i]["Components"][1]["Item"]);
+	if (component1_index) then
+		name, texture, price, quantity, numAvailable, isUsable = GetMerchantItemInfo(component1_index);
+		BuyPoisons_Item_price = price * (BuyPoisonsItemInfo[i]["Components"][1]["Quantity"]) * BuyPoisons_PurchaseQuantity;
+	end
 	if (BuyPoisonsItemInfo[i]["Components"][2]["Item"]) then
-		name, texture, price, quantity, numAvailable, isUsable = GetMerchantItemInfo(Index_merchant(BuyPoisonsItemInfo[i]["Components"][2]["Item"] ));
-		BuyPoisons_Item_price = BuyPoisons_Item_price + (price * BuyPoisonsItemInfo[i]["Components"][2]["Quantity"]*BuyPoisons_PurchaseQuantity);
+		local component2_index = Index_merchant(BuyPoisonsItemInfo[i]["Components"][2]["Item"]);
+		if (component2_index) then
+			name, texture, price, quantity, numAvailable, isUsable = GetMerchantItemInfo(component2_index);
+			BuyPoisons_Item_price = BuyPoisons_Item_price + (price * BuyPoisonsItemInfo[i]["Components"][2]["Quantity"]*BuyPoisons_PurchaseQuantity);
+		end
 	end
 	
-	if ( i < 25 ) then
-		name, texture, price, quantity, numAvailable, isUsable = GetMerchantItemInfo(Index_merchant(BuyPoisonsItemInfo[i]["Vial_Type"] ));
-		BuyPoisons_Item_price  = BuyPoisons_Item_price + (price * ((BuyPoisons_PurchaseQuantity/ 5 )));
+	if ( BuyPoisonsItemInfo[i]["Vial_Type"] ) then
+		local vial_index = Index_merchant(BuyPoisonsItemInfo[i]["Vial_Type"]);
+		if (vial_index) then
+			name, texture, price, quantity, numAvailable, isUsable = GetMerchantItemInfo(vial_index);
+			BuyPoisons_Item_price  = BuyPoisons_Item_price + (price * ((BuyPoisons_PurchaseQuantity/ 5 )));
+		end
 	end
 	return BuyPoisons_Item_price;
 end
